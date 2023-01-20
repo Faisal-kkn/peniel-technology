@@ -257,58 +257,102 @@ function Home() {
                     </div>
                 </div>
             </section>
-            <section className='py-[70px] pb-3'>
+            <section className='py-[60px] pb-3'>
                 <div className='mx-auto max-w-7xl px-6' >
                     <footer className="p-4 bg-white sm:p-6 dark:bg-gray-900">
-                        <div className="md:flex md:justify-between">
+                        <div className="grid grid-cols-4 gap-7">
                             <div className="mb-6 md:mb-0">
-                                <a href="https://flowbite.com/" className="flex items-center">
-                                    <img src="https://flowbite.com/docs/images/logo.svg" className="h-8 mr-3" alt="FlowBite Logo" />
-                                    <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
-                                </a>
+                                <img src="https://www.penieltech.com/assets/images/peniel-technology-logo.png" className="h-8 mr-3 mb-5" alt="FlowBite Logo" />
+                                <p className='text-[14px]'>Authorized Accounting Software Dealer and IT Solutions Provider in Dubai, Sharjah, Ajman, Abu Dhabi, Fujairah, Al ain - United Arab Emirates</p>
                             </div>
-                            <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
-                                <div>
-                                    <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Resources</h2>
-                                    <ul className="text-gray-600 dark:text-gray-400">
-                                        <li className="mb-4">
-                                            <a href="https://flowbite.com/" className="hover:underline">Flowbite</a>
-                                        </li>
-                                        <li>
-                                            <a href="https://tailwindcss.com/" className="hover:underline">Tailwind CSS</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div>
-                                    <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Follow us</h2>
-                                    <ul className="text-gray-600 dark:text-gray-400">
-                                        <li className="mb-4">
-                                            <a href="https://github.com/themesberg/flowbite" className="hover:underline ">Github</a>
-                                        </li>
-                                        <li>
-                                            <a href="https://discord.gg/4eeurUVvTy" className="hover:underline">Discord</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div>
-                                    <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Legal</h2>
-                                    <ul className="text-gray-600 dark:text-gray-400">
-                                        <li className="mb-4">
-                                            <a href="#" className="hover:underline">Privacy Policy</a>
-                                        </li>
-                                        <li>
-                                            <a href="#" className="hover:underline">Terms &amp; Conditions</a>
-                                        </li>
-                                    </ul>
-                                </div>
+                            <div>
+                                <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">QUICK LINKS</h2>
+                                <ul className="text-gray-600 dark:text-gray-400 list-disc list-inside">
+                                    <li className="mb-4">
+                                        <a className="hover:underline">Odoo</a>
+                                    </li>
+                                    <li className="mb-4">
+                                        <a className="hover:underline">Tally Prime</a>
+                                    </li>
+                                    <li className="mb-4">
+                                        <a className="hover:underline">ERPNext</a>
+                                    </li>
+                                    <li className="mb-4">
+                                        <a className="hover:underline">Quickbooks</a>
+                                    </li>
+                                    <li className="mb-4">
+                                        <a className="hover:underline">Hardware</a>
+                                    </li>
+                                    <li className="mb-4">
+                                        <a className="hover:underline">VAT</a>
+                                    </li>
+                                    <li className="mb-4">
+                                        <a className="hover:underline">Sage</a>
+                                    </li>
+                                    <li className="mb-4">
+                                        <a className="hover:underline">Shop.penieltech.com</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">ELATE PRODUCTS</h2>
+                                <ul className="text-gray-600 dark:text-gray-400 list-disc list-inside">
+                                    <li className="mb-4">
+                                        <a className="hover:underline">Elate HRMS</a>
+                                    </li>
+                                    <li className="mb-4">
+                                        <a className="hover:underline">Elate CRM</a>
+                                    </li>
+                                    <li className="mb-4">
+                                        <a className="hover:underline">Elate TMS</a>
+                                    </li>
+                                    <li className="mb-4">
+                                        <a className="hover:underline">Elate POS</a>
+                                    </li>
+                                    <li className="mb-4">
+                                        <a className="hover:underline">Elate QBAddins</a>
+                                    </li>
+                                    <li className="mb-4">
+                                        <a className="hover:underline">ERP Software</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">GET IN TOUCH</h2>
+                                <ul className="text-gray-600 dark:text-gray-400 list-disc list-inside">
+                                    <li className="mb-4">
+                                        <a className="hover:underline">Odoo</a>
+                                    </li>
+                                    <li className="mb-4">
+                                        <a className="hover:underline">Tally Prime</a>
+                                    </li>
+                                    <li className="mb-4">
+                                        <a className="hover:underline">ERPNext</a>
+                                    </li>
+                                    <li className="mb-4">
+                                        <a className="hover:underline">Quickbooks</a>
+                                    </li>
+                                    <li className="mb-4">
+                                        <a className="hover:underline">Hardware</a>
+                                    </li>
+                                    <li className="mb-4">
+                                        <a className="hover:underline">VAT</a>
+                                    </li>
+                                    <li className="mb-4">
+                                        <a className="hover:underline">Sage</a>
+                                    </li>
+                                    <li className="mb-4">
+                                        <a className="hover:underline">Shop.penieltech.com</a>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                         <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
                         <div className="sm:flex sm:items-center sm:justify-between">
-                            <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="https://flowbite.com/" className="hover:underline">Flowbite™</a>. All Rights Reserved.
+                            <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">2022 © All Rights Reserved | Designed by <a href="https://www.penieltech.com/" className="hover:underline"> Peniel Technology LLC</a>.
                             </span>
                             <div className="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
-                                <a href="#" className="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                                <a href="https://www.facebook.com/penieltech" target='_blank' className="text-gray-500 hover:text-gray-900 dark:hover:text-white">
                                     <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg>
                                     <span className="sr-only">Facebook page</span>
                                 </a>
