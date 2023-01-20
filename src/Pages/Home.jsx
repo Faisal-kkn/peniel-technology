@@ -67,7 +67,7 @@ function Home() {
             </div>
             <motion.div initial={{ y: -150, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
-                transition={{ duration: 0.7 }} className='mx-auto max-w-7xl px-6 py-[70px] '>
+                transition={{ duration: 0.7 }} className='mx-auto max-w-7xl px-6 py-[70px] overflow-x-hidden'>
                 <p className='text-center text-black text-[17px] pb-4'>We are partnered with following softwares to solve your accounting and digital transformation needs</p>
                 <div className="overflow-hidden ">
                     <Slider {...settings}>
@@ -204,7 +204,7 @@ function Home() {
                 </div>
             </section>
 
-            <section className="team py-[70px]">
+            <section className="team py-[70px] overflow-hidden">
                 <div className='mx-auto max-w-7xl px-6 py-2 flex flex-col md:flex-row gap-5' >
                     <motion.div initial={{ x: -100, opacity: 0 }}
                         whileInView={{ x: 0, opacity: 1 }}
@@ -233,7 +233,7 @@ function Home() {
                 </div>
             </section>
 
-            <section className="We_are " style={{ backgroundImage: `url('https://kitnew.moxcreative.com/mocounta/wp-content/uploads/sites/20/2022/11/multiethnic-business-people-working-together-in-the-office.jpg')` }}>
+            <section className="We_are overflow-hidden" style={{ backgroundImage: `url('https://kitnew.moxcreative.com/mocounta/wp-content/uploads/sites/20/2022/11/multiethnic-business-people-working-together-in-the-office.jpg')` }}>
                 <div className='bg-[rgba(21,73,87,0.7)] py-[100px]'>
                     <div className='mx-auto max-w-7xl px-6 flex flex-col lg:flex-row items-center' >
                         <motion.div className='w-12/12 lg:w-6/12 text-white'>
