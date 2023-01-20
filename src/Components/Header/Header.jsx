@@ -130,9 +130,9 @@ export default function Header() {
                         <a className="text-base font-medium text-white"> Odoo </a>
                         <a className="text-base font-medium text-white"> Elate </a>
                         <a className="text-base font-medium text-white"> QuickBooks </a>
-                        <a className="text-base font-medium text-white"> Sage </a>
+                        {/* <a className="text-base font-medium text-white"> Sage </a>
                         <a className="text-base font-medium text-white"> Tally Prime </a>
-                        <a className="text-base font-medium text-white"> Others </a>
+                        <a className="text-base font-medium text-white"> Others </a> */}
                         <a className="text-base font-medium text-white"> Contact </a>
 
                     </Popover.Group>

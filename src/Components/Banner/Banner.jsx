@@ -26,7 +26,7 @@ const form = [
 function Banner() {
     return (
         <div className='mx-auto max-w-7xl px-6 py-2 text-white flex-col flex gap-7 items-center justify-center h-[90%]'>
-            <div className='text-center w-8/12 mx-auto'>
+            <div className='text-center w-12/12 md:w-8/12 mx-auto'>
                 <h1 className='text-[35px] md:text-[55px] font-black '>
                     COMPLETE
                     ACCOUNTING & IT
@@ -38,7 +38,7 @@ function Banner() {
                     departments. A one-stop-hub for all your Accounting, ERP, CRM and Payroll.
                 </p>
             </div>
-            <button className='bg-main p-3 rounded-[3px] uppercase btn'>Get in touch</button>
+            <button className='bg-main p-3 rounded-[3px] uppercase btn mb-5'>Get in touch</button>
             {/* <div className='w-12/12  md:w-8/12 left-side'>
           </div> */}
             {/* <div className='w-12/12 md:w-4/12 '>
