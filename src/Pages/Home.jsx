@@ -2,6 +2,7 @@ import React from 'react'
 import { TopHeader, Header, Banner, Clients, Service } from '../Components/index'
 import { CheckCircleIcon } from '@heroicons/react/20/solid'
 import Slider from "react-slick";
+import { motion } from "framer-motion"
 import './Home.css'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -64,7 +65,9 @@ function Home() {
                     <Banner />
                 </div>
             </div>
-            <div className='mx-auto max-w-7xl px-6 py-[70px] '>
+            <motion.div initial={{ y: -150, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                transition={{ duration: 0.7 }} className='mx-auto max-w-7xl px-6 py-[70px] '>
                 <p className='text-center text-black text-[17px] pb-4'>We are partnered with following softwares to solve your accounting and digital transformation needs</p>
                 <div className="overflow-hidden ">
                     <Slider {...settings}>
@@ -77,29 +80,39 @@ function Home() {
                         }
                     </Slider>
                 </div>
-            </div>
+            </motion.div>
             <section className="about " style={{ backgroundImage: `url('https://kitnew.moxcreative.com/mocounta/wp-content/uploads/sites/20/2022/11/professional-business-team.jpg')` }}>
                 <div className='bg-[rgba(21,73,87,0.7)] py-[100px]'>
-                    <div className='mx-auto max-w-7xl px-6 py-2' >
+                    <motion.div initial={{ x: -150, opacity: 0 }}
+                        whileInView={{ x: 0, opacity: 1 }}
+                        transition={{ duration: 0.7 }} className='mx-auto max-w-7xl px-6 py-2' >
                         <div className='w-12/2 md:w-8/12 lg:w-6/12 text-white '>
                             <p className='text-[#aed1f9] text-[14px] mb-[10px] tracking-normal font-medium'>What We Do</p>
                             <h2 className='text-[45px] font-bold mb-[20px]'>Your IT Partner.</h2>
                             <p className='text-[16px] font-medium leading-7'>We are the trustworthy suppliers of all sorts of accounting software in Dubai, UAE, Bahrain, Sharjah, Abu Dhabi and, all other Middle East. Our main objective is to organize, strategize and implement solutions to your business with Tally ERP 9, Intuit QuickBooks, Sage 50 US, Sage 50 UK, Sage 100, Sage 300, Elate CRM, Elate HRMS, and Elate POS, etc. We are the exclusive distributor of Elate HRMS and Custom-developed software in UAE, Oman, and Bahrain.</p>
                         </div>
-                    </div>
+                    </motion.div>
                 </div>
             </section>
             <section className='services py-[70px] bg-[#f9fafc]'>
                 <div className='mx-auto max-w-7xl px-6 py-2'>
-                    <p className='text-main text-[14px] mb-[10px] tracking-normal font-medium text-center'>OUR SERVICES</p>
-                    <h2 className='text-[25px] font-bold mb-[10px] text-center'>Accounting - Inventory - Bookkeeping Management and ERP Solution Provider</h2>
-                    <p className='text-[14px] font-normal leading-7 mb-[40px] text-center'>
+                    <motion.p initial={{ y: -150, opacity: 0 }}
+                        whileInView={{ y: 0, opacity: 1 }}
+                        transition={{ duration: 0.7 }} className='text-main text-[14px] mb-[10px] tracking-normal font-medium text-center'>OUR SERVICES</motion.p>
+                    <motion.h2 initial={{ y: -150, opacity: 0 }}
+                        whileInView={{ y: 0, opacity: 1 }}
+                        transition={{ duration: 0.6 }} className='text-[25px] font-bold mb-[10px] text-center'>Accounting - Inventory - Bookkeeping Management and ERP Solution Provider</motion.h2>
+                    <motion.p initial={{ y: -150, opacity: 0 }}
+                        whileInView={{ y: 0, opacity: 1 }}
+                        transition={{ duration: 0.5 }} className='text-[14px] font-normal leading-7 mb-[40px] text-center'>
                         Peniel Technology LLC is the best solution provider for
                         <span className='text-main'> ERP (Enterprise Resource Planning), CRM (Customer Resource Management) </span>
                         and HCM (Human Capital Management) and Accounting Software in UAE.  With more than 270,000 flourishing businesses in Dubai itself, we have our headquarters located in Dubai, aiming to cater to all their  accounting and
                         management requirements and also provide excellent support to all our customers.
-                    </p>
-                    <div className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+                    </motion.p>
+                    <motion.div initial={{ y: -100, opacity: 0 }}
+                        whileInView={{ y: 0, opacity: 1 }}
+                        transition={{ duration: 0.7 }} className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
                         {
                             services.map((item, index) => {
                                 return (
@@ -107,59 +120,77 @@ function Home() {
                                 )
                             })
                         }
-                    </div>
+                    </motion.div>
                 </div>
             </section>
             <section className="team py-[70px]">
                 <div className='mx-auto max-w-7xl px-6 py-2 flex md:flex-row flex-col' >
                     <div className='w-12/12 md:w-6/12 text-black '>
-                        <p className='text-main text-[14px] mb-[10px] tracking-normal font-medium'>Why Peniel Technology?</p>
-                        <h2 className='text-[45px] font-bold mb-[20px]'>With Expert Team.</h2>
-                        <p className='text-[16px] font-medium leading-7 text-[#868686]'>You can be stress-free since Peniel Technology LLC will take care of your business development and management.</p>
+                        <motion.p initial={{ y: -100, opacity: 0 }}
+                            whileInView={{ y: 0, opacity: 1 }}
+                            transition={{ duration: 0.5 }} className='text-main text-[14px] mb-[10px] tracking-normal font-medium'>Why Peniel Technology?</motion.p>
+                        <motion.h2 initial={{ y: -100, opacity: 0 }}
+                            whileInView={{ y: 0, opacity: 1 }}
+                            transition={{ duration: 0.6 }} className='text-[45px] font-bold mb-[20px]'>With Expert Team.</motion.h2>
+                        <motion.p initial={{ y: -100, opacity: 0 }}
+                            whileInView={{ y: 0, opacity: 1 }}
+                            transition={{ duration: 0.7 }} className='text-[16px] font-medium leading-7 text-[#868686]'>You can be stress-free since Peniel Technology LLC will take care of your business development and management.</motion.p>
                         <div>
-                            <div className='flex gap-4 mt-5 items-center'>
+                            <motion.div initial={{ x: -100, opacity: 0 }}
+                                whileInView={{ x: 0, opacity: 1 }}
+                                transition={{ duration: 0.5 }} className='flex gap-4 mt-5 items-center'>
                                 <span className='p-1 bg-[rgba(21,101,192,0.2)] rounded-full'>
                                     <CheckCircleIcon className='w-8 h-8 text-main' />
                                 </span>
                                 <div>
                                     <p>A one-stop-hub for all your Accounting, ERP, CRM and payroll needs.</p>
                                 </div>
-                            </div>
-                            <div className='flex gap-4 mt-5 items-center'>
+                            </motion.div>
+                            <motion.div initial={{ x: -100, opacity: 0 }}
+                                whileInView={{ x: 0, opacity: 1 }}
+                                transition={{ duration: 0.6 }} className='flex gap-4 mt-5 items-center'>
                                 <span className='p-1 bg-[rgba(21,101,192,0.2)] rounded-full'>
                                     <CheckCircleIcon className='w-8 h-8 text-main' />
                                 </span>
                                 <div>
                                     <p>Provide cost-efficient mobility solutions</p>
                                 </div>
-                            </div>
-                            <div className='flex gap-4 mt-5 items-center'>
+                            </motion.div>
+                            <motion.div initial={{ x: -100, opacity: 0 }}
+                                whileInView={{ x: 0, opacity: 1 }}
+                                transition={{ duration: 0.7 }} className='flex gap-4 mt-5 items-center'>
                                 <span className='p-1 bg-[rgba(21,101,192,0.2)] rounded-full'>
                                     <CheckCircleIcon className='w-8 h-8 text-main' />
                                 </span>
                                 <div>
                                     <p>Flawlessly embed new technologies to facilitate better governance.</p>
                                 </div>
-                            </div>
-                            <div className='flex gap-4 mt-5 items-center'>
+                            </motion.div>
+                            <motion.div initial={{ x: -100, opacity: 0 }}
+                                whileInView={{ x: 0, opacity: 1 }}
+                                transition={{ duration: 0.8 }} className='flex gap-4 mt-5 items-center'>
                                 <span className='p-1 bg-[rgba(21,101,192,0.2)] rounded-full'>
                                     <CheckCircleIcon className='w-8 h-8 text-main' />
                                 </span>
                                 <div>
                                     <p>Focus on the customer for accelerated growth.</p>
                                 </div>
-                            </div>
-                            <div className='flex gap-4 mt-5 items-center'>
+                            </motion.div>
+                            <motion.div initial={{ x: -100, opacity: 0 }}
+                                whileInView={{ x: 0, opacity: 1 }}
+                                transition={{ duration: 0.9 }} className='flex gap-4 mt-5 items-center'>
                                 <span className='p-1 bg-[rgba(21,101,192,0.2)] rounded-full'>
                                     <CheckCircleIcon className='w-8 h-8 text-main' />
                                 </span>
                                 <div>
                                     <p>Customized apps and software tuned to the needs of the customer.</p>
                                 </div>
-                            </div>
+                            </motion.div>
                         </div>
                     </div>
-                    <div className='w-12/12 md:w-6/12 text-black relative mt-10 md:mt-0' >
+                    <motion.div initial={{ x: 100, opacity: 0 }}
+                        whileInView={{ x: 0, opacity: 1 }}
+                        transition={{ duration: 0.9 }} className='w-12/12 md:w-6/12 text-black relative mt-10 md:mt-0' >
                         <div className='team-bg w-11/12 mx-auto md:ml-auto z-30 mb-5 relative rounded-md' style={{ backgroundImage: `url('https://kitnew.moxcreative.com/mocounta/wp-content/uploads/sites/20/2022/11/preparing-annual-accounts-with-coworkers-1536x1024.jpg')` }}>
                             <div className='bg-white text-center absolute p-6 rounded-full bottom-[-50px] right-[-20px] md:right-[-30px] lg:right-[-50px] h-[200px] flex items-center flex-col justify-center ' style={{ boxShadow: '0px 30px 60px 0px rgb(0 0 0 / 10%)' }}>
                                 <span className='text-[50px] font-bold text-main'>13+</span>
@@ -169,13 +200,15 @@ function Home() {
                         <div className='absolute bottom-0 left-0 z-[-1] ' style={{ backgroundImage: `url('https://kitnew.moxcreative.com/mocounta/wp-content/uploads/sites/20/2022/11/bg_2.png')`, height: '200px', width: '170px', backgroundSize: 'cover' }}>
 
                         </div>
-                    </div>
+                    </motion.div>
                 </div>
             </section>
 
             <section className="team py-[70px]">
                 <div className='mx-auto max-w-7xl px-6 py-2 flex flex-col md:flex-row gap-5' >
-                    <div className='w-12/12 md:w-6/12 text-black relative flex gap-5 '  >
+                    <motion.div initial={{ x: -100, opacity: 0 }}
+                        whileInView={{ x: 0, opacity: 1 }}
+                        transition={{ duration: 0.5 }} className='w-12/12 md:w-6/12 text-black relative flex gap-5 '  >
                         <div className='team-bg w-6/12  z-30 mb-5 relative rounded-md mt-16' style={{ backgroundImage: `url('https://kitnew.moxcreative.com/mocounta/wp-content/uploads/sites/20/2022/11/woman-doing-accounting-1536x1071.jpg')` }}>
 
                         </div>
@@ -185,13 +218,17 @@ function Home() {
                         <div className='absolute bottom-5 right-[-20px] md:right-[-50px] z-[-1]' style={{ backgroundImage: `url('https://kitnew.moxcreative.com/mocounta/wp-content/uploads/sites/20/2022/11/bg_2.png')`, height: '200px', width: '170px', backgroundSize: 'cover' }}>
 
                         </div>
-                    </div>
-                    <div className='w-12/12 md:w-5/12 text-black  ml-auto'>
+                    </motion.div>
+                    <motion.div initial={{ x: 100, opacity: 0 }}
+                        whileInView={{ x: 0, opacity: 1 }}
+                        transition={{ duration: 0.9 }} className='w-12/12 md:w-5/12 text-black  ml-auto'>
                         <p className='text-main text-[14px] mb-[10px] tracking-normal font-medium'>We Prepare Startups For Accelerators</p>
                         <h2 className='text-[45px] font-bold mb-[20px]'>Our services</h2>
                         <p className='text-[16px] font-medium leading-7 text-[#868686] mb-6'>As a pioneer IT solutions firm, we provide accounting, Trading, Invoicing, bookkeeping and management software solutions for all your business requirements. Additionally, we provide software customization, software development according to the necessities of our clients. We also provide hardware equipment for your office along with its installation and demo. All the necessary training for our products is also given by us so that you can start your duties on a fast pace. We also develop eye-catching websites at request for your business.</p>
-                        <button className='btn text-white'>Get started now</button>
-                    </div>
+                        <motion.button initial={{ opacity: 0, scale: 0.4 }}
+                            animate={{ opacity: 1, scale: 1 }}
+                            transition={{ duration: 0.3 }} className='btn text-white'>Get started now</motion.button>
+                    </motion.div>
 
                 </div>
             </section>
@@ -199,20 +236,38 @@ function Home() {
             <section className="We_are " style={{ backgroundImage: `url('https://kitnew.moxcreative.com/mocounta/wp-content/uploads/sites/20/2022/11/multiethnic-business-people-working-together-in-the-office.jpg')` }}>
                 <div className='bg-[rgba(21,73,87,0.7)] py-[100px]'>
                     <div className='mx-auto max-w-7xl px-6 flex flex-col lg:flex-row items-center' >
-                        <div className='w-12/12 lg:w-6/12 text-white'>
+                        <motion.div className='w-12/12 lg:w-6/12 text-white'>
                             <h2 className='text-[45px] font-bold mb-[20px]'>We are.</h2>
                             <ul className='list-disc list-inside leading-10 '>
-                                <li>Tally ERP 9 (Prime) Gold Partner in Dubai, UAE</li>
-                                <li> QuickBooks Dealer, Partner, Consultant, Provider, Pro Advisor in Dubai, UAE</li>
-                                <li>Sage Accounting Software Partner, Dealer in Dubai, UAE.</li>
-                                <li> Official Fortinet Distributor, Dealer, Partner in Dubai, UAE</li>
-                                <li> Official Odoo Development, Dealer, Partner in Dubai, UAE</li>
-                                <li>Official ERPNext Partner in Dubai, UAE</li>
+                                <motion.li initial={{ x: -100, opacity: 0 }}
+                            whileInView={{ x: 0, opacity: 1 }}
+                            transition={{ duration: 0.5 }} >Tally ERP 9 (Prime) Gold Partner in Dubai, UAE</motion.li>
+                                <motion.li initial={{ x: -100, opacity: 0 }}
+                            whileInView={{ x: 0, opacity: 1 }}
+                            transition={{ duration: 0.6 }} > QuickBooks Dealer, Partner, Consultant, Provider, Pro Advisor in Dubai, UAE</motion.li>
+                                <motion.li initial={{ x: -100, opacity: 0 }}
+                            whileInView={{ x: 0, opacity: 1 }}
+                            transition={{ duration: 0.7 }} >Sage Accounting Software Partner, Dealer in Dubai, UAE.</motion.li>
+                                <motion.li initial={{ x: -100, opacity: 0 }}
+                            whileInView={{ x: 0, opacity: 1 }}
+                            transition={{ duration: 0.8 }} > Official Fortinet Distributor, Dealer, Partner in Dubai, UAE</motion.li>
+                                <motion.li initial={{ x: -100, opacity: 0 }}
+                            whileInView={{ x: 0, opacity: 1 }}
+                            transition={{ duration: 0.9 }} > Official Odoo Development, Dealer, Partner in Dubai, UAE</motion.li>
+                                <motion.li initial={{ x: -100, opacity: 0 }}
+                            whileInView={{ x: 0, opacity: 1 }}
+                            transition={{ duration: 1 }} >Official ERPNext Partner in Dubai, UAE</motion.li>
                             </ul>
-                            <h2 className='text-[45px] font-bold mb-[20px] mt-10'>Our support.</h2>
-                            <p className='text-[16px] font-medium leading-7'>With more than 2000 satisfied customers, we have built a prominent brand name in the market due to our reliable customer support and unparalleled services. We provide online support via remote-controlled, desktop sharing software and also conduct on-site visits to our customers for training, installation, setup, and other issues that arise which need on-site attention.</p>
-                        </div>
-                        <div className='w-full lg:w-6/12 mt-10 lg:mt-0'>
+                            <motion.h2  initial={{ x: -100, opacity: 0 }}
+                            whileInView={{ x: 0, opacity: 1 }}
+                            transition={{ duration: 1 }}  className='text-[45px] font-bold mb-[20px] mt-10'>Our support.</motion.h2>
+                            <motion.p  initial={{ x: -100, opacity: 0 }}
+                            whileInView={{ x: 0, opacity: .7 }}
+                            transition={{ duration: .5 }}  className='text-[16px] font-medium leading-7'>With more than 2000 satisfied customers, we have built a prominent brand name in the market due to our reliable customer support and unparalleled services. We provide online support via remote-controlled, desktop sharing software and also conduct on-site visits to our customers for training, installation, setup, and other issues that arise which need on-site attention.</motion.p>
+                        </motion.div>
+                        <motion.div initial={{ x: 100, opacity: 0 }}
+                            whileInView={{ x: 0, opacity: 1 }}
+                            transition={{ duration: 0.9 }} className='w-full lg:w-6/12 mt-10 lg:mt-0'>
                             <form className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 w-full">
                                 <div className='mb-4'>
                                     <h2 className='text-[45px] font-bold mb-[10px] text-center'>Contact Form</h2>
@@ -253,14 +308,14 @@ function Home() {
                                 </div>
                             </form>
 
-                        </div>
+                        </motion.div>
                     </div>
                 </div>
             </section>
             <section className='py-[60px] pb-3'>
                 <div className='mx-auto max-w-7xl px-6' >
                     <footer className="p-4 bg-white sm:p-6 dark:bg-gray-900">
-                        <div className="grid grid-cols-4 gap-7">
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-7">
                             <div className="mb-6 md:mb-0">
                                 <img src="https://www.penieltech.com/assets/images/peniel-technology-logo.png" className="h-8 mr-3 mb-5" alt="FlowBite Logo" />
                                 <p className='text-[14px]'>Authorized Accounting Software Dealer and IT Solutions Provider in Dubai, Sharjah, Ajman, Abu Dhabi, Fujairah, Al ain - United Arab Emirates</p>
