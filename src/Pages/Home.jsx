@@ -124,7 +124,7 @@ function Home() {
                 </div>
             </section>
             <section className="team py-[70px]">
-                <div className='mx-auto max-w-7xl px-6 py-2 flex md:flex-row flex-col' >
+                <div className='mx-auto max-w-7xl px-6 py-2 flex md:flex-row flex-col'  >
                     <div className='w-12/12 md:w-6/12 text-black '>
                         <motion.p initial={{ y: -100, opacity: 0 }}
                             whileInView={{ y: 0, opacity: 1 }}
@@ -188,19 +188,21 @@ function Home() {
                             </motion.div>
                         </div>
                     </div>
-                    <motion.div initial={{ x: 100, opacity: 0 }}
-                        whileInView={{ x: 0, opacity: 1 }}
-                        transition={{ duration: 0.9 }} className='w-12/12 md:w-6/12 text-black relative mt-10 md:mt-0' >
-                        <div className='team-bg w-11/12 mx-auto md:ml-auto z-30 mb-5 relative rounded-md' style={{ backgroundImage: `url('https://kitnew.moxcreative.com/mocounta/wp-content/uploads/sites/20/2022/11/preparing-annual-accounts-with-coworkers-1536x1024.jpg')` }}>
+                    <div className='w-12/12 md:w-6/12 text-black relative mt-10 md:mt-0' >
+                        <motion.div initial={{ x: 100, opacity: 0 }}
+                            whileInView={{ x: 0, opacity: 1 }}
+                            transition={{ duration: 0.9 }} className='team-bg w-11/12 mx-auto md:ml-auto z-30 mb-5 relative rounded-md' style={{ backgroundImage: `url('https://kitnew.moxcreative.com/mocounta/wp-content/uploads/sites/20/2022/11/preparing-annual-accounts-with-coworkers-1536x1024.jpg')` }}>
                             <div className='bg-white text-center absolute p-6 rounded-full bottom-[-50px] right-[-20px] md:right-[-30px] lg:right-[-50px] h-[200px] flex items-center flex-col justify-center ' style={{ boxShadow: '0px 30px 60px 0px rgb(0 0 0 / 10%)' }}>
                                 <span className='text-[50px] font-bold text-main'>13+</span>
                                 <p>Years of Experience</p>
                             </div>
-                        </div>
-                        <div className='absolute bottom-0 left-0 z-[-1] ' style={{ backgroundImage: `url('https://kitnew.moxcreative.com/mocounta/wp-content/uploads/sites/20/2022/11/bg_2.png')`, height: '200px', width: '170px', backgroundSize: 'cover' }}>
+                        </motion.div>
+                        <motion.div initial={{ x: 100, opacity: 0 }}
+                            whileInView={{ x: 0, opacity: 1 }}
+                            transition={{ duration: 0.9 }} className='absolute bottom-0 left-0 z-[-1] ' style={{ backgroundImage: `url('https://kitnew.moxcreative.com/mocounta/wp-content/uploads/sites/20/2022/11/bg_2.png')`, height: '200px', width: '170px', backgroundSize: 'cover' }}>
 
-                        </div>
-                    </motion.div>
+                        </motion.div>
+                    </div>
                 </div>
             </section>
 
