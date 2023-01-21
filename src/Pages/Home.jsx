@@ -189,19 +189,13 @@ function Home() {
                         </div>
                     </div>
                     <div className='w-12/12 md:w-6/12 text-black relative mt-10 md:mt-0' >
-                        <motion.div initial={{ x: 100, opacity: 0 }}
-                            whileInView={{ x: 0, opacity: 1 }}
-                            transition={{ duration: 0.9 }} className='team-bg w-11/12 mx-auto md:ml-auto z-30 mb-5 relative rounded-md' style={{ backgroundImage: `url('https://kitnew.moxcreative.com/mocounta/wp-content/uploads/sites/20/2022/11/preparing-annual-accounts-with-coworkers-1536x1024.jpg')` }}>
+                        <div className='team-bg w-11/12 mx-auto md:ml-auto z-30 mb-5 relative rounded-md' style={{ backgroundImage: `url('https://kitnew.moxcreative.com/mocounta/wp-content/uploads/sites/20/2022/11/preparing-annual-accounts-with-coworkers-1536x1024.jpg')` }}>
                             <div className='bg-white text-center absolute p-6 rounded-full bottom-[-50px] right-[-20px] md:right-[-30px] lg:right-[-50px] h-[200px] flex items-center flex-col justify-center ' style={{ boxShadow: '0px 30px 60px 0px rgb(0 0 0 / 10%)' }}>
                                 <span className='text-[50px] font-bold text-main'>13+</span>
                                 <p>Years of Experience</p>
                             </div>
-                        </motion.div>
-                        <motion.div initial={{ x: 100, opacity: 0 }}
-                            whileInView={{ x: 0, opacity: 1 }}
-                            transition={{ duration: 0.9 }} className='absolute bottom-0 left-0 z-[-1] ' style={{ backgroundImage: `url('https://kitnew.moxcreative.com/mocounta/wp-content/uploads/sites/20/2022/11/bg_2.png')`, height: '200px', width: '170px', backgroundSize: 'cover' }}>
-
-                        </motion.div>
+                        </div>
+                        <div className='absolute bottom-0 left-0 z-[-1] ' style={{ backgroundImage: `url('https://kitnew.moxcreative.com/mocounta/wp-content/uploads/sites/20/2022/11/bg_2.png')`, height: '200px', width: '170px', backgroundSize: 'cover' }}></div>
                     </div>
                 </div>
             </section>
@@ -237,7 +231,7 @@ function Home() {
 
             <section className="We_are overflow-hidden" style={{ backgroundImage: `url('https://kitnew.moxcreative.com/mocounta/wp-content/uploads/sites/20/2022/11/multiethnic-business-people-working-together-in-the-office.jpg')` }}>
                 <div className='bg-[rgba(21,73,87,0.7)] py-[100px]'>
-                    <div className='mx-auto max-w-7xl px-6 flex flex-col lg:flex-row items-center' >
+                    <div className='mx-auto max-w-7xl px-6 flex flex-col lg:flex-row items-center overflow-hidden' >
                         <motion.div className='w-12/12 lg:w-6/12 text-white'>
                             <h2 className='text-[45px] font-bold mb-[20px]'>We are.</h2>
                             <ul className='list-disc list-inside leading-10 '>
@@ -272,7 +266,7 @@ function Home() {
                             transition={{ duration: 0.9 }} className='w-full lg:w-6/12 mt-10 lg:mt-0'>
                             <form className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 w-full">
                                 <div className='mb-4'>
-                                    <h2 className='text-[45px] font-bold mb-[10px] text-center'>Contact Form</h2>
+                                    <h2 className='text-[25px] md:text-[35px] lg:text-[45px] font-bold mb-[10px] text-center'>Contact Form</h2>
                                     <p className='text-center text-[16px] font-medium '>Contact us for custom quote</p>
                                 </div>
                                 <div className="mb-4">
